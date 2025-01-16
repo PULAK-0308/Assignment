@@ -1,0 +1,35 @@
+1. Write an AWS Lambda Function That Adds Two Numbers :
+
+Steps:
+1) Create a New Lambda Function:
+a) Go to the AWS Lambda Console.
+b) Click Create Function.
+c) Choose "Author from scratch."
+d) Provide a name for your function (AddTwoNumbers) and choose the runtime (Python ).
+
+2) Code the Function: Use the inline editor 
+def lambda_handler(event, context):
+    # Extract numbers from the event
+    num1 = event.get('num1', 0)
+    num2 = event.get('num2', 0)
+    
+    # Add the numbers
+    result = num1 + num2
+    
+    # Return the result
+    return {
+        'statusCode': 200,
+        'body': {
+            'num1': num1,
+            'num2': num2,
+            'result': result
+        }
+    }
+3) Test the Function:
+a) Click Test in the Lambda console.
+b) Create a test event, e.g.
+{
+  "num1": 5,
+  "num2": 7
+}
+c) Run the test and verify the result in the console.
