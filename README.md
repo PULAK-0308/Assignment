@@ -1,5 +1,11 @@
+#Frontend
+It contains frontend.html , frontendscript.js , frontendstyles.css  which can be run in vs code .
 
-# Chat Application
+#AWS
+It contains AWS lamda function that adds two numbers and returns the result.
+
+#Django
+# Chat Application (chat_app)
 
 Develop a chat application with the following features:
 
